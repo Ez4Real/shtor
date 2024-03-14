@@ -1,0 +1,69 @@
+.delete-pop-up__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    z-index: 1;
+}
+.delete-pop-up__container.active {
+    background-color: rgba(0,0,0,0.5);
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.delete-pop-up__container .delete-wrapper {
+    padding: 24px;
+    position: relative;
+    background: #FFF;
+}
+.delete-pop-up__container .delete-wrapper .cross {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    cursor: pointer;
+}
+.delete-pop-up__container .delete-wrapper p:first-of-type {
+    margin-bottom: 12px;
+}
+.delete-pop-up__container .delete-wrapper p {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.delete-pop-up__container .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    margin-top: 24px;
+}
+
+.delete-pop-up__container .buttons button {
+    width: 80px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+    border: 1px solid;
+}
+.delete-pop-up__container .buttons button.yes,
+.delete-pop-up__container .buttons button.no:hover {
+    background-color: #000;
+    color: #fff;
+}
+.delete-pop-up__container .buttons button.yes:hover,
+.delete-pop-up__container .buttons button.no {
+    background-color: #fff;
+    color: #000;
+}
+

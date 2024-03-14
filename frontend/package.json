@@ -1,0 +1,47 @@
+{
+  "name": "frontend-shtor",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://shtor.com.ua/",
+  "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/base": "^5.0.0-beta.29",
+    "@mui/icons-material": "^5.15.2",
+    "@mui/material": "^5.15.2",
+    "axios": "^1.6.3",
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.1",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "^5.0.1",
+    "react-scroll": "^1.9.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

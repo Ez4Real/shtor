@@ -1,0 +1,86 @@
+.admin-product-title {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.admin-product-title svg {
+    cursor: pointer;
+}
+.orders__container .table {
+    overflow: visible;
+}
+.orders__container .table .orders-row {
+    cursor: pointer;
+    transition: .3s;
+    height: 60px;
+    position: relative;
+    overflow: visible;
+    background-color: #ffff97;
+}
+.orders__container .table .orders-row:hover {
+    background-color: #ffff81;
+}
+.orders__container .table .orders-row.approved {
+    background-color: #c0f8c0;
+}
+.orders__container .table .orders-row.approved:hover {
+    background-color: #cef8ce;
+}
+.orders__container {
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.orders__container .table .tracking-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.hover-info {
+    background-color: #fff;
+    padding-bottom: 20%;
+}
+.hover-info ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.hover-info ul.products-listed {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.hover-info ul li {
+    width: 30%;
+    margin: 10px 0;
+}
+.hover-info ul.products-listed li {
+    width: initial;
+}
+.hover-info ul li .product-details {
+    max-width: 250px;
+}
+.hover-info ul li img {
+    max-width: 200px;
+}
+.hover-info .virovni {
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .hover-info ul li {
+        width: 100%;
+    }
+}

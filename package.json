@@ -1,0 +1,16 @@
+{
+    "name": "shtor",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "start": "concurrently \"npm run server\" \"npm run client\" -k",
+        "server": "cd backend && npm run start",
+        "server:dev": "cd backend && npm run dev",
+        "client": "cd frontend && npm run start",
+        "start:dev": "concurrently \"npm run server:dev\" \"npm run client\" -k",
+        "start:prod": "cd backend && npm run start"
+    },
+    "dependencies": {
+        "concurrently": "^6.3.0"
+    }
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tracking Information for Your Package</title>
+</head>
+<body style="width: fit-content; font-weight: 600; font-size: 16px; line-height: 20px;">
+  <div style="text-align: center;">
+    <img src="cid:shtorlogo"/>
+  </div>
+  <p>Hello <%= first_name %> <%= last_name %>,</p>
+  <p>We are pleased to inform you that your order has been shipped.<br>Here is the tracking number for your package:</p>
+  <p>Tracking Number: <%= tracking_id %></p>
+
+  <p>You can track the delivery status of your order<br>on our delivery partner's website:</p>
+  <p><%= shipping_link %></p>
+
+  <p>If you have any questions or concerns,<br>feel free to contact our customer support.</p>
+
+  <p>Best regards,<br>Shtor</p>
+</body>
+</html>

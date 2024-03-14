@@ -1,0 +1,104 @@
+.footer .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.footer .footer-links.social {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.footer .links-text {
+    margin-top: 12px;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    white-space: nowrap;
+}
+.footer .links-text:first-of-type {
+    margin-top: 0;
+}
+
+.custom-language {
+    margin-bottom: 42px;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+}
+.custom-language .main-language {
+    font-weight: 400;
+}
+.custom-language .custom-language__menu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    opacity: 0;
+    top: -71px;
+    padding: 0 10px;
+    left: -10px;
+}
+.custom-language .custom-language__menu .language__menu-item {
+    display: inline-block;
+    margin-bottom: 9px;
+    font-weight: 300;
+}
+.custom-language.active .custom-language__menu {
+    opacity: 1;
+}
+
+.footer .link-instagram {
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+
+@media(max-width: 768px) {
+    .footer .footer-links {
+        align-items: flex-start;
+    }
+
+    .footer .footer-links.social {
+        flex-direction: column-reverse;
+        height: 116px;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    .footer .link-instagram {
+        color: #000;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .footer .custom-language {
+        margin-top: 16px;
+        margin-bottom: 0;
+        color: #000;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+    }
+    .custom-language .custom-language__menu {
+        top: 23px;
+    }
+}
+
+
+@media(max-width: 445px) {
+    .menu-footer-mobile__container .custom-language__menu {
+        top: 33px;
+    }
+}

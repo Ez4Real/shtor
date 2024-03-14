@@ -1,0 +1,15 @@
+.panel__container {
+    margin: -46px;
+    width: calc(100% + 92px);
+}
+
+.main__container {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .panel__container {
+        margin: -20px;
+        width: calc(100% + 40px);
+    }
+}

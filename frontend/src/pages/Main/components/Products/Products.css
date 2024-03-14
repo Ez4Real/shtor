@@ -1,0 +1,28 @@
+.product-list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+
+.product-list + .see-more {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.product-list + .see-more img {
+    margin-bottom: 9px;
+    width: 54px;
+}
+
+.product-list + .see-more img.rotate-360 {
+    transform: rotate(360deg);
+    transition: 2.2s ease-in-out;
+}

@@ -1,0 +1,22 @@
+.product-info .tabs-description {
+    margin-bottom: 18px;
+}
+.product-info .tabs-description ul {
+    padding-left: 23px;
+    margin: 0;
+}
+
+@media(max-width: 768px) {
+    .product-info .tabs-description {
+        margin-bottom: 18px;
+    }
+    .product-info .tabs-description .tab-buttons {
+        margin-bottom: 12px;
+    }
+    .product-info .tabs-description .tab-content {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}

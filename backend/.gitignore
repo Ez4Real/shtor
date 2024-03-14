@@ -1,0 +1,9 @@
+.env
+.forestadmin-schema.json
+
+/node_modules
+
+# production
+/build
+
+package-lock.json

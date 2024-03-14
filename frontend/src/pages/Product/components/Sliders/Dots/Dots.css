@@ -1,0 +1,81 @@
+.product-info .dots-slider {
+    position: relative;
+    top: -64px;
+    z-index: 0;
+    margin: 0 auto;
+    height: 0;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.product-info .dots-slider .dots-slider__dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    cursor: pointer;
+    background-color: #3A3A3A;
+    margin: 0 12px;
+}
+
+.product-info .dots-slider .dots-slider__dot.active {
+    background: #FAFAFA;
+}
+.product-info .dots-slider.back-animation .dots-slider__dot,
+.product-info .dots-slider.forth-animation .dots-slider__dot,
+.product-info .dots-slider.back-animation,
+.product-info .dots-slider.forth-animation {
+    transition: .5s;
+}
+
+.product-info .dots-slider.back-animation {
+    transform: translateX(20%);
+}
+.product-info .dots-slider.forth-animation {
+    transform: translateX(-20%);
+}
+.product-info .dots-slider.back-animation .dots-slider__dot.active,
+.product-info .dots-slider.forth-animation .dots-slider__dot.active {
+    background-color: #3A3A3A;
+}
+
+.product-info .dots-slider .dots-slider__dot.forth-hidden,
+.product-info .dots-slider .dots-slider__dot.back-hidden,
+.product-info .dots-slider.back-animation .dots-slider__dot.forth-color,
+.product-info .dots-slider.forth-animation .dots-slider__dot.back-color {
+    opacity: 0;
+}
+.product-info .dots-slider.forth-animation .dots-slider__dot.forth-hidden,
+.product-info .dots-slider.back-animation .dots-slider__dot.back-hidden {
+    opacity: 1;
+}
+.product-info .dots-slider.back-animation .dots-slider__dot.back-color,
+.product-info .dots-slider.forth-animation .dots-slider__dot.forth-color {
+    background-color: #fff;
+}
+
+.product-info .dots-slider.double.forth-animation.slide_1 .dots-slider__dot.back-color,
+.product-info .dots-slider.double.back-animation.slide_0 .dots-slider__dot.forth-color,
+.product-info .dots-slider.double.slide_0 .dots-slider__dot.back-color,
+.product-info .dots-slider.double.slide_1 .dots-slider__dot.forth-color,
+.product-info .dots-slider.double .dots-slider__dot.forth-hidden,
+.product-info .dots-slider.double .dots-slider__dot.back-hidden {
+    visibility: hidden;
+}
+
+.product-info .cart__pop-up .dots-slider {
+    top: -28px;
+}
+.product-info .cart__pop-up .dots-slider .dots-slider__dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 4px;
+}
+
+@media (max-width: 768px) {
+    .product-info .dots-slider .dots-slider__dot {
+        width: 6px;
+        height: 6px;
+        margin: 0 4px;
+    }
+}

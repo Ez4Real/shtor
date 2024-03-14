@@ -1,0 +1,185 @@
+.product-info {
+    min-height: 592px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-info .info-right {
+    width: 50%;
+    padding-left: 90px;
+}
+
+.product-info.slides {
+    min-height: initial;
+}
+
+.product-info .tab-button {
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    text-decoration: none;
+}
+.product-info .tab-button:not(.active):hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.product-info .tab-buttons {
+    margin-bottom: 16px;
+}
+.product-info .tab-buttons .tab-button {
+    margin-right: 36px;
+}
+.product-info .tab-buttons .tab-button.active {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.product-info .tabs-variations {
+    display: flex;
+    gap: 17px;
+    margin-bottom: 26px;
+}
+.product-info .tabs-variations ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.product-info .tabs-variations ul.attachment {
+    display: flex;
+    flex-direction: column;
+}
+.product-info .tabs-variations .attachment li.Безпідвісу {
+    order: 0;
+}
+.product-info .tabs-variations .attachment li.Срібнийланцюг {
+    order: 1;
+}
+.product-info .tabs-variations .attachment li.Срібнийланцюг {
+    order: 2;
+}
+.product-info .tabs-variations .size li:nth-of-type(1) .custom-radio__value::before {
+    content: "XS";
+}
+.product-info .tabs-variations .size li:nth-of-type(2) .custom-radio__value::before {
+    content: "S";
+}
+.product-info .tabs-variations .size li:nth-of-type(3) .custom-radio__value::before {
+    content: "M";
+}
+.product-info .tabs-variations .size li:nth-of-type(4) .custom-radio__value::before {
+    content: "L";
+}
+
+.product-info .price {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.product-info .add-to-cart {
+    width: 100%;
+    max-width: 363px;
+    border: 1px solid #000;
+    cursor: pointer;
+    padding: 1px 0;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 0;
+    text-transform: initial;
+    position: relative;
+    transition: none;
+}
+.product-info .add-to-cart svg {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .5s;
+}
+.product-info .add-to-cart svg path {
+    fill: white;
+}
+.product-info .add-to-cart span {
+    color: #000;
+    transition: .5s opacity;
+}
+.product-info .add-to-cart:hover {
+    background-color: #000;
+}
+.product-info .add-to-cart:hover span {
+    color: #fff;
+}
+
+.product-info .add-to-cart.adding-animation {
+    color: #fff;
+    background-color: #000;
+}
+.product-info .add-to-cart.adding-animation span {
+    opacity: 0;
+}
+.product-info .add-to-cart.adding-animation svg {
+    opacity: 1;
+}
+
+.product-info .product-title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+@media(max-width: 768px) {
+    .product-info {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+    .product-info .info-right {
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+    .product-info .product-title {
+        margin-bottom: 16px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .product-info .tab-buttons .tab-button {
+        min-width: initial;
+        margin-right: 36px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .product-info .tabs-variations {
+        margin-bottom: 16px;
+    }
+    .product-info .tabs-variations ul .custom-radio__value,
+    .product-info .tabs-variations ul .custom-radio__value::before {
+        font-size: 14px;
+    }
+    .product-info .price {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .product-info {
+        justify-content: flex-start;
+        min-height: 700px;
+    }
+    .product-info .add-to-cart {
+        width: 100%;
+        max-width: initial;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 6px 0;
+    }
+}

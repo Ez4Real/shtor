@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body style="width: fit-content; font-weight: 600; font-size: 16px; line-height: 20px;">
+  <div style="text-align: center; filter: invert(1);">
+    <img src="cid:shtorlogo"/>
+  </div>
+  <h2>Thank you for purchase!</h2>
+  <p>Dear <%= email %>!</p>
+  <p>
+    Your order has been placed successfully.<br>We thank you for your purchase and your confidence.
+  </p>
+  <p style="font-size: 16px;">Your order details are:</p>
+  <p>
+    <%= total_products %>
+    <% if (total_products === 1) { %>
+        item
+    <% } else { %>
+        items
+    <% } %>
+  </p>
+  
+  <% products.forEach(function(product, index) { %>
+    <div style="margin-bottom: 10px;">
+      <div>
+        <img style="width: 200px;" src="cid:product_<%= index %>"/>
+      </div>
+      <div style="display: flex;">
+        <div><%= product.name.en %> x<%= product.quantity %></div>
+        <div style="margin-left: auto;">
+          <%= currency_symbol %><%= currency_symbol === '₴'? product.price.ua * product.quantity: product.price.en * product.quantity%>
+        </div>
+      </div>
+    </div>
+  <% }); %>
+  
+  <div style="display: flex;">
+    <div>Shipping</div>
+    <div style="margin-left: auto;"><%= currency_symbol %><%= shipping_price %></div>
+  </div>
+  <div style="display: flex;">
+    <div>TOTAL</div>
+    <div style="margin-left: auto;"><%= currency_symbol %><%= amount %></div>
+    <br>
+  </div>
+  <p>If you have any questions or need assistance,<br>feel free to contact us.</p>
+  <p>Best regards,<br>Shtor Team!</p>
+</body>
+</html>

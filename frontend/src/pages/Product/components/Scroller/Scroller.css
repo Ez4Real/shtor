@@ -1,0 +1,132 @@
+.scroller-container {
+    margin-top: 91px;
+}
+.scroller-container .scroller-title {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 30px;
+}
+
+.scroller-container .scroller-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scroller-container .scroller-items .product-item {
+    cursor: pointer;
+    text-align: left;
+    padding-right: 24px;
+    flex: 0 0 auto;
+    transition: opacity 0.3s ease-in-out;
+    width: calc(25% - 18px);
+}
+
+.scroller-container .product-image__container {
+    position: relative;
+    overflow: hidden;
+}
+.scroller-container .product-image__container .product-img {
+    width: 100%;
+    position: relative;
+}
+
+.scroller-container .product-image__container .product-img-hover {
+    opacity: 0;
+    transition: .3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+.scroller-container .product-image__container:hover .product-img-hover {
+    opacity: 1;
+}
+
+.scroller-container .product-item:focus-visible {
+    outline: none;
+}
+
+.scroller-container .product-image__container {
+    margin-bottom: 16px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.scroller-container .scroller-subtitle {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+.scroller-container .scroller-price {
+    margin: 0;
+}
+
+@media (min-width: 769px) {
+    .scroller-container .product-image__container {
+        aspect-ratio: 1 / 1;
+    }
+    .scroller-container .product-image__container .product-img.swanpendantpng {
+        top: 20%;
+    }
+    .scroller-container .product-image__container .product-img-hover.swanpendantpng {
+        top: 30%;
+    }
+    .scroller-container .product-image__container .product-img.set3jpg {
+        top: -2%;
+    }
+    .scroller-container .product-image__container .product-img.set6jpg {
+        top: -7%;
+        transform: scale(0.9);
+    }
+    .scroller-container .product-image__container .product-img.set7jpg {
+        top: -3%;
+        transform: scale(0.85);
+    }
+    .scroller-container .product-image__container .product-img.set8jpg {
+        transform: scale(0.75);
+    }
+    .scroller-container .product-image__container .product-img.set9jpg {
+        top: 15px;
+    }
+    .scroller-container .product-image__container .product-img-hover.seashellbackcombpng,
+    .scroller-container .product-image__container .product-img-hover.goldseashellpendantbackpng {
+        top: 32%;
+    }
+}
+@media (max-width: 768px) {
+    .scroller-container {
+        margin-top: 41px;
+    }
+    .scroller-container .product-item {
+        width: calc(50% - 18px);
+    }
+    .scroller-container .scroller-title {
+        margin-top: 0;
+        margin-bottom: 24px;
+    }
+    .scroller-container .progress-bar__container {
+        position: relative;
+        padding-top: 28px;
+    }
+    .scroller-container .progress-bar__container .progress-bar {
+        display: block;
+        background: black;
+        margin: 0 -20px;
+        width: calc(12.5% + 40px);
+        height: 0.8px;
+        position: absolute;
+        left: 0;
+        transition: .3s;
+    }
+    .scroller-container .product-image__container {
+        aspect-ratio: 335 / 447;
+        margin-bottom: 16px;
+    }
+    .scroller-container .scroller-subtitle {
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+    .scroller-container .scroller-price {
+        margin: 0;
+    }
+}

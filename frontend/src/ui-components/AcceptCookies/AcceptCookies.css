@@ -1,0 +1,42 @@
+.cookies__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.2);
+    opacity: 1;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cookies__overlay .cookie__container {
+    width: 293px;
+    padding: 32px;
+    background-color: #fff;
+}
+.cookies__overlay .cookie__container p {
+    color: #000;
+    margin-bottom: 24px;
+    font-size: 14px;
+}
+.cookies__overlay .cookie__container .cookies-accept {
+    height: 40px;
+    width: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.cookies__overlay .cookie__container .cookies-accept:hover {
+    background-color: #222;
+}
+
+.cookies__overlay.accepted {
+    opacity: 0;
+    pointer-events: none;
+}

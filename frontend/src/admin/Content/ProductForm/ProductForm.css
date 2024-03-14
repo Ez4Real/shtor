@@ -1,0 +1,159 @@
+.product__form .input__row.name__container {
+    order: 0
+}
+.product__form .input__row.description__container {
+    order: 1
+}
+.product__form .input__row.price__container {
+    order: 2
+}
+.product__form .input__row.color__container {
+    order: 3
+}
+.product__form .input__row.size__container {
+    order: 4
+}
+.product__form .input__row.attachment__container {
+    order: 5
+}
+.product__form .input__row.feature__container {
+    order: 6
+}
+.product__form .input__row.material__container {
+    order: 7
+}
+.product__form .input__row.images__container {
+    order: 8
+}
+.variations__container  {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: scroll;
+    max-width: calc(100vw - 250px);
+}
+.variations__container .variations-item {
+    min-width: 316px;
+    padding: 45px 10px 10px 10px;
+    border-radius: 10px;
+    background-color: #363636;
+    color: #000;
+    display: inline-flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    position: relative;
+    margin-right: 10px;
+}
+
+
+.variations__container .variations-item .remove__variation-item {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    padding: 5px;
+    transition: .3s;
+    box-shadow: none;
+    display: inline-flex;
+    gap: 5px;
+    background-color: #6b0e0e;
+}
+.variations__container .variations-item .remove__variation-item:hover {
+    background-color: #f84848;
+}
+
+.variations__container .add__variation-item {
+    margin-top: 7px;
+    min-width: 200px;
+}
+
+.add__variation-item {
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+.variations__container .variations-item::before {
+    content: 'Варіація №' attr(variation_number);
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    top: 14.5px;
+}
+
+.product__form {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+}
+.product__form .values__container:not(.variations__container) {
+    display: flex;
+    flex-direction: column;
+}
+.product__form .input__row {
+    position: relative;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    padding: 10px 10px 40px;
+    margin: 10px 0;
+}
+.product__form .input__row.group__container  {
+    padding: 0;
+    background-color: transparent;
+}
+.product__form .input__row.color__container,
+.product__form .input__row.size__container {
+    min-height: 192px;
+}
+.product__form .input__row.color__container,
+.product__form .input__row.color__container,
+.product__form .input__row.size__container .custom-input,
+.product__form .input__row.size__container .custom-input {
+    display: block;
+}
+.product__form .input__row.color__container .MuiButtonBase-root,
+.product__form .input__row.size__container .MuiButtonBase-root {
+    display: inline-flex;
+    width: fit-content;
+    margin: 0 10px 10px;
+}
+.product__form .input__row.color__container .MuiButtonBase-root:first-of-type,
+.product__form .input__row.size__container .MuiButtonBase-root:first-of-type {
+    margin-left: 0;
+}
+
+.product__form .input__row .remove__value {
+    position: absolute;
+    bottom: 7.5px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.product__form .input__row .remove__value:hover {
+    background-color: #f84848;
+    color: white;
+}
+
+.product__form .choose__container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.product__form .add__product {
+    margin-top: 10px;
+}
+
+.product__form .css-sghohy-MuiButtonBase-root-MuiButton-root {
+    background-color: #343434;
+}
+.product__form .css-sghohy-MuiButtonBase-root-MuiButton-root:hover {
+    background-color: #4b4b4b;
+}

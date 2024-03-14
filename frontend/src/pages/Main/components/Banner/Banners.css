@@ -1,0 +1,35 @@
+.banner-img {
+    width: calc(100% + 92px);
+    margin-left: -46px;
+    margin-top: -46px;
+}
+
+@media (min-width: 769px) {
+    .banner-img {
+        min-height: 70vh;
+    }
+}
+
+@media (max-width: 1340px), (min-height: calc(1664px + 46px)) and (min-width: 768px) {
+    .banner__container {
+        display: flex;
+        justify-content: center;
+    }
+    .banner__container .banner-img {
+        max-height: 100vh;
+        width: initial;
+        margin: -46px auto 0;
+        height: 100vh;
+    }
+}
+@media (max-width: 769px) {
+    .banner__container {
+        overflow: hidden;
+        width: calc(100vw);
+        margin: -20px -20px 0 -20px;
+    }
+    .banner__container .banner-img {
+        object-fit: cover;
+        width: 100%;
+    }
+}

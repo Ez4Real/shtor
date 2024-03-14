@@ -1,0 +1,12 @@
+/node_modules
+package-lock.json
+/frontend/public/productPhotos/
+
+.idea
+* .idea/
+
+productPhotos
+testingPhotos
+shtor.products.json
+data.json
+data.js

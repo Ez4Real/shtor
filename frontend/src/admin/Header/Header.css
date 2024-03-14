@@ -1,0 +1,34 @@
+.header__admin {
+    border-bottom: 1px solid gray;
+    padding: 15px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__admin .logo {
+    width: 120px;
+}
+
+.header__admin .change__value {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 0 3px;
+}
+.header__admin .change__value.active {
+    color: #000;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.header__admin .lang_currency {
+    display: flex;
+    gap: 5px;
+    color: #fff;
+}
+.header__admin .change__value.ml20 {
+    margin-left: 20px;
+}
+
